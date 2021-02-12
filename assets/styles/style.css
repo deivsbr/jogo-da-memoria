@@ -28,6 +28,9 @@ img {
     width: 150px;
     height: 150px;
     position: relative;
+    -webkit-transform-style: preserve-3d; 
+    -moz-transform-style: preserve-3d; 
+    -ms-transform-style: preserve-3d; 
     transform-style: preserve-3d;
     transition: transform .5s;
 }
@@ -41,6 +44,8 @@ img {
     align-items: center;
     border-radius: 20px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0,0, 0.45);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -101,9 +106,6 @@ img {
 .card {
     width: 120px;
     height: 120px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform .500ms;
     }
 
 .card_back {
@@ -111,7 +113,6 @@ img {
     background-color: #000000;
     border: 1px solid rgb(83, 83, 83);
     font-size: 100px;
-    
 }
 
 #gameOver {
@@ -139,10 +140,6 @@ img {
 .card {
     width: 80px;
     height: 80px;
-    position: relative;
-    margin-left: 1px;
-    transform-style: preserve-3d;
-    transition: transform .500ms;
 }
 
 .card_back {
@@ -161,7 +158,6 @@ img {
     grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
     gap: 10px;
     margin-left: -5px;
-    
 }
 }
 
@@ -174,9 +170,6 @@ img {
 .card {
     width: 60px;
     height: 60px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform .500ms;
 }
 
 .card_back {
