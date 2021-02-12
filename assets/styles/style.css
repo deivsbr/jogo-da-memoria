@@ -50,11 +50,17 @@ img {
 }
 
 .flip {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .card_front {
     background-color:rgb(163, 156, 156);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
@@ -129,6 +135,9 @@ img {
     flex-direction: column;
     top: 0;
     }
+    #gameOver {
+        position: absolute;
+    }
 }
 
 @media only screen and (max-width:425px){
@@ -158,6 +167,9 @@ img {
     grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
     gap: 10px;
     margin-left: -5px;
+}
+#gameOver {
+    position: absolute;
 }
 }
 
@@ -191,5 +203,8 @@ img {
     grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
     gap: 10px;
     margin-left: -5px;
+}
+#gameOver {
+    position: absolute;
 }
 }
